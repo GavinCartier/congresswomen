@@ -1,10 +1,16 @@
+import Header from "./components/header.jsx"; 
+import Footer from "./components/footer.jsx"; 
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 function App() {
 
   return (
     <>
-      <div>
-        Congresswomen
-      </div>
+      <Router>
+        <Header />
+        <Footer />
+      </Router>
     </>
   )
 }
