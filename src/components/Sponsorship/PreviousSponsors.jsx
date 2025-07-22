@@ -10,6 +10,7 @@ const PreviousSponsors = ({
     return (
         <div className={styles.previousSponsors}>
             <h2>Previous Sponsors</h2>
+            <hr />
             <div className={styles.sponsorList}>
                 {sponsors.map(sponsor => {
                     return <div className={styles.sponsorImage} key={sponsor}>

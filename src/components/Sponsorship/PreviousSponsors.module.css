@@ -2,6 +2,11 @@ h2 {
     color: #0c2a5d;
 }
 
+hr {
+    width: 50px;
+    border: 1.5px solid #0c2a5d
+}
+
 .previousSponsors {
     display: flex;
     flex-direction: column;
