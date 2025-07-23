@@ -1,7 +1,7 @@
 import Header from "./components/header.jsx"; 
 import Footer from "./components/footer.jsx"; 
 
-import PreviousSponsors from "./components/Sponsorship/PreviousSponsors.jsx";
+import Sponsors from "./components/Sponsorship/Sponsors.jsx";
 import { loadImagesFromDir } from "./utils/loadImagesFromDir.js";
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -13,7 +13,7 @@ function App() {
     <>
       <Router>
         <Header />
-        <PreviousSponsors 
+        <Sponsors 
           sponsors={sponsors.map(sponsor => sponsor.logo)} // Extract logos from the loaded sponsors
         />
         <Footer />

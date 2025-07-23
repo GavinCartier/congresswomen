@@ -1,15 +1,15 @@
-import styles from './PreviousSponsors.module.css'
+import styles from './Sponsors.module.css'
 
 /* 
 A display previous sponsors, given a list of sponsor images.
 */
 
-const PreviousSponsors = ({
+const Sponsors = ({
     sponsors=[] // List of images of the sponsors
 }) => {
     return (
-        <div className={styles.previousSponsors}>
-            <h2>Previous Sponsors</h2>
+        <div className={styles.sponsors}>
+            <h2>Sponsors</h2>
             <hr />
             <div className={styles.sponsorList}>
                 {sponsors.map(sponsor => {
@@ -22,4 +22,4 @@ const PreviousSponsors = ({
     )
 }
 
-export default PreviousSponsors
+export default Sponsors
