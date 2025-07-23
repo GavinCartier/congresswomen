@@ -1,23 +1,22 @@
 import Header from "./components/header.jsx"; 
 import Footer from "./components/footer.jsx"; 
 
-import Sponsors from "./components/Sponsorship/Sponsors.jsx";
-import SponsorshipOpportunities from "./components/SponsorshipOpportunities/SponsorshipOpportunities.jsx";
+import SponsorshipPage from "./pages/SponsorshipPage.jsx";
+
+import { useMemo } from "react";
+
 import { loadImagesFromDir } from "./utils/loadImagesFromDir.js";
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
-  const sponsors = loadImagesFromDir('sponsors');
+  const sponsors = useMemo(() => loadImagesFromDir('sponsors'), []);
 
   return (
     <>
       <Router>
         <Header />
-        <SponsorshipOpportunities />
-        <Sponsors 
-          sponsors={sponsors.map(sponsor => sponsor.logo)} // Extract logos from the loaded sponsors
-        />
+        <SponsorshipPage sponsors={sponsors}/>
         <Footer />
       </Router>
     </>

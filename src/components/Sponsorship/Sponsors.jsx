@@ -5,7 +5,7 @@ A display previous sponsors, given a list of sponsor images.
 */
 
 const Sponsors = ({
-    sponsors=[] // List of images of the sponsors
+    sponsors // List of images of the sponsors
 }) => {
     return (
         <div className={styles.sponsors}>
@@ -13,8 +13,8 @@ const Sponsors = ({
             <hr />
             <div className={styles.sponsorList}>
                 {sponsors.map(sponsor => {
-                    return <div className={styles.sponsorImage} key={sponsor}>
-                        <img src={sponsor}/>
+                    return <div className={styles.sponsorImage} key={sponsor.name}>
+                        <img src={sponsor.logo}/>
                     </div>
                 })}
             </div>
