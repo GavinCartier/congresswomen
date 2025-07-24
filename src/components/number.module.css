@@ -1,10 +1,10 @@
 .main {
-    height: auto;
+    height: 10vw;
     width: 100vw;
     max-width: 100vw;
     background-color: #db5d0f; /* or your desired color */
     color: #fff;
-    padding: 4rem 2rem;
+    padding: 4rem 0rem;
     display: flex;
     justify-content: center;
     align-items: center;

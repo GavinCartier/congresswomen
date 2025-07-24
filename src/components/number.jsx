@@ -2,13 +2,12 @@ import React, { useEffect, useState } from 'react';
 import styles from './number.module.css';
 import { useInView } from 'react-intersection-observer';
 
-const Counter = ({ target, label }) => {
+const Counter = ({ target, label, start }) => {
   const [count, setCount] = useState(0);
-  const [hasStarted, setHasStarted] = useState(false);
 
   useEffect(() => {
     let interval;
-    if (hasStarted && count < target) {
+    if (start && count < target) {
       interval = setInterval(() => {
         setCount((prev) => {
           const next = prev + Math.ceil(target / 50);
@@ -17,7 +16,7 @@ const Counter = ({ target, label }) => {
       }, 40); // speed
     }
     return () => clearInterval(interval);
-  }, [hasStarted, count, target]);
+  }, [start, count, target]);
 
   return (
     <div className={styles.counter}>
@@ -29,15 +28,22 @@ const Counter = ({ target, label }) => {
 
 const Number = () => {
   const { ref, inView } = useInView({ triggerOnce: true });
+  const [startCounting, setStartCounting] = useState(false);
+
+  useEffect(() => {
+    if (inView) {
+      setStartCounting(true);
+    }
+  }, [inView]);
 
   return (
     <div className={styles.main} ref={ref}>
       {inView && (
         <div className={styles.container}>
-          <Counter target={12000} label="Attendees" />
-          <Counter target={600} label="Speakers" />
-          <Counter target={800} label="Investors" />
-          <Counter target={3000} label="Startups" />
+          <Counter target={12000} label="Attendees" start={startCounting} />
+          <Counter target={600} label="Speakers" start={startCounting}/>
+          <Counter target={800} label="Investors" start={startCounting}/>
+          <Counter target={3000} label="Startups" start={startCounting}/>
         </div>
       )}
     </div>
