@@ -1,11 +1,28 @@
 .getInvolved {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    text-align: center;
+}
 
+.getInvolved h3 {
+    color: #0c2a5d;
 }
 
 .getInvolvedPanels {
-
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 40px;
 }
 
 .getInvolvedPanel {
-    
+    flex: 1;
+}
+
+.getInvolvedPanel img {
+    width: 100%;
+    border-radius: 15px;
 }

@@ -1,5 +1,6 @@
 import SponsorshipOpportunities from "../components/SponsorshipOpportunities/SponsorshipOpportunities";
 import MeetYourGoals from "../components/MeetYourGoals/MeetYourGoals";
+import GetInvolved from "../components/GetInvolved/GetInvolved";
 import Sponsors from "../components/Sponsorship/Sponsors";
 
 function SponsorshipPage({
@@ -9,6 +10,7 @@ function SponsorshipPage({
         <div>
             <SponsorshipOpportunities />
             <MeetYourGoals />
+            <GetInvolved />
             <Sponsors sponsors={sponsors}/>
         </div>
     )
