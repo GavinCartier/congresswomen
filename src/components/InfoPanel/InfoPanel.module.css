@@ -1,0 +1,55 @@
+.infoPanelContainer {
+    padding: 100px 50px;
+}
+
+.infoPanel {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+.infoPanelLeft {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    padding: 40px;
+}
+
+.infoPanelLeft img {
+    width: 100%;
+}
+
+.infoPanelContent {
+    border-left: 1px solid gray;
+    flex: 3;
+}
+
+.infoPanelContent button {
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    padding: 1rem;
+    border-bottom: 1px solid gray;
+    border-radius: 0px;
+    font-size: 18px;
+    font-weight: 450;
+    justify-content: space-between;
+    display: flex;
+}
+
+.infoPanelCollapsedContent {
+    
+    transition: max-height 0.3s ease;
+}
+
+.infoPanelCollapsedText {
+    padding: 1rem;
+    border-bottom: 1px solid gray;
+    border-radius: 0px;
+}
+.chevronOpen {
+    transform: rotate(90deg);
+}
