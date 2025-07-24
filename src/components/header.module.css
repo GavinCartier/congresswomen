@@ -1,23 +1,22 @@
 .header {
   background-color: #fff;
-  padding-left: 2.5rem;
+  padding-left: 1rem;
   padding-right: 2.5rem;
-  color: #023E8A;
+  color: #00050b;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: Poppins;
+  font-size: .91666667rem;
 }
 
-.logo a {
-  font-weight: bold;
-  color: #023E8A;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
+
 
 .logoImage {
-  height: 120px;
+  height: 60px;
   width: auto;
+  justify-content: flex-start;
+
 }
 
 .nav {
@@ -26,10 +25,12 @@
 }
 
 .navLink {
-  color: #023E8A;
+  color: #000204;
   text-decoration: none;
   font-weight: 500;
+  font-family: 'Poppins', sans-serif;
 }
+
 
 .navLink:hover {
   text-decoration: underline;
@@ -44,9 +45,6 @@
     padding: 1rem 1.5rem;
   }
 
-  .logoImage {
-    height: 60px;
-  }
 
   .nav {
     display: flex;

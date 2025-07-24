@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './header.module.css';
-import Logo from '../assets/emea_venture_logo.png'; // adjust path if needed
+import Logo from '../assets/logo WOMEN ECONOMIC Congress 2020.png'; // adjust path if needed
 
 
 function Header() {
@@ -14,8 +14,10 @@ function Header() {
       </div>
       <nav className={styles.nav}>
         <Link to="/" className={styles.navLink}>Home</Link>
-        <Link to="/blog" className={styles.navLink}>Blog</Link>
-        <Link to="/contact" className={styles.navLink}>Contact Us</Link>
+        <Link to="/speakers" className={styles.navLink}>Speakers</Link>
+        <Link to="/sponsorships" className={styles.navLink}>Sponsorships</Link>
+        <Link to="/globalawards" className={styles.navLink}>Global Awards</Link>
+
       </nav>
     </header>
     );
