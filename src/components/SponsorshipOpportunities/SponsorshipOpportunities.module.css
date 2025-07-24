@@ -1,6 +1,9 @@
 .sponsorshipOpportunities {
     position: relative;
+    display: grid;
     width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
 
 .sponsorshipOpportunities img {
@@ -45,4 +48,14 @@ button {
 button:hover {
     background-color: #cce4ff;
     color: #023e8a;
-  }
+}
+
+@media (max-width: 768px) {
+    .sponsorshipOpportunities {
+        justify-content: right;
+    }
+    .sponsorshipOpportunities img {
+        width: auto;
+        min-height: 350px;
+    }
+}
