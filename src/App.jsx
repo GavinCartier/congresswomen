@@ -18,10 +18,21 @@ function App() {
     <>
       <Router>
         <Header />
-        <MainPage />
-        <Number />
-        <SponsorshipPage sponsors={sponsors} // Extract logos from the loaded sponsors
-        />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <MainPage />
+              <Number />
+            </>
+          }/>
+
+          <Route path="/sponsorships" element = {
+            <>
+              <SponsorshipPage sponsors={sponsors} // Extract logos from the loaded sponsors
+              />
+            </>
+          }/>
+        </Routes>
         <Footer />
       </Router>
     </>
