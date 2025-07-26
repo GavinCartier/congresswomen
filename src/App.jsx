@@ -13,24 +13,28 @@ function App() {
   const sponsors = useMemo(() => loadImagesFromDir('sponsors'), []);
 
   return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route
-          path="/"
-          element={(
+    <>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={
             <>
               <MainPage />
               <Number />
-              <SponsorshipPage sponsors={sponsors} />
             </>
-          )}
-        />
-        {/* Add more routes if needed */}
-      </Routes>
-      <Footer />
-    </Router>
-  );
+          }/>
+
+          <Route path="/sponsorships" element = {
+            <>
+              <SponsorshipPage sponsors={sponsors} // Extract logos from the loaded sponsors
+              />
+            </>
+          }/>
+        </Routes>
+        <Footer />
+      </Router>
+    </>
+  )
 }
 
 export default App;

@@ -30,3 +30,32 @@
     width: 100%;
     border-radius: 20px;
 }
+
+@media (max-width: 768px) {
+    .meetYourGoals {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .meetYourGoalsImage {
+        justify-content: center;
+        display: flex;
+    }
+
+    .meetYourGoalsImage img {
+        max-width: 500px;
+    }
+
+    .meetYourGoalsText {
+        justify-items: center;
+    }
+
+    .meetYourGoalsText p {
+        text-align: center;
+    }
+
+    .meetYourGoalsText hr {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
