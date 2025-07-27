@@ -7,3 +7,5 @@ function AwardsPage() {
         </div>
     );
 }
+
+export default AwardsPage
