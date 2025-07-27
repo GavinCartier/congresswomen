@@ -20,6 +20,22 @@ const content = [
     {
         title: "The Challenge",
         text: "Become one of the challengers in The Challenge! The competition organised within the framework of VDS promotes an innovative culture within the university environment by enabling participants to develop their skills through 12-hour hackathon challenges."
+    },
+    {
+        title: "Private Catering at VDS",
+        text: "Discover the ultimate networking experience at VDS with our private catering services. Indulge in an exclusive culinary experience while connecting with like-minded professionals in a luxurious setting. Our private catering offerings for corporates are designed to enhance your networking opportunities, providing a perfect environment for meaningful conversations and valuable connections."
+    },
+    {
+        title: "Networking and Experience Side Events",
+        text: "VDS transforms our city into the global epicentre of innovation, attracting key players from the entrepreneurial ecosystem and consolidating Valencia’s position on the world stage, thanks to the Side Events that complement VDS during the months of October and November. Information on 2025 Side Events coming soon."
+    },
+    {
+        title: "Quantifying the Impact of VDS",
+        text: "The latest edition of VDS in numbers looked like this: 1,500+ Corporates 3,000+ Startups 700+ Investors 150+ Sponsors & Collaborators 2,500+ Meetings"
+    },
+    {
+        title: "Business and Investors Lounge",
+        text: "Engage and connect with startups shaping the international landscape at the Business & investors Lounge, designed to foster meaningful networking and collaboration. An intimate setting to share your interests and goals and fostering strategic partnerships that can propel your ventures forward."
     }
 ]
 

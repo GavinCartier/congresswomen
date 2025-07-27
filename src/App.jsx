@@ -10,6 +10,9 @@ import { loadImagesFromDir } from "./utils/loadImagesFromDir.js";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainPage from "./components/mainpage.jsx";
 import Number from "./components/number.jsx"
+import SponsorshipOpportunities from "./components/SponsorshipOpportunities/SponsorshipOpportunities.jsx";
+import Speakers from "./components/Speakers/Speakers.jsx";
+import Sponsors from "./components/Sponsorship/Sponsors.jsx";
 
 function App() {
   const sponsors = useMemo(() => loadImagesFromDir('sponsors'), []);
@@ -23,6 +26,9 @@ function App() {
             <>
               <MainPage />
               <Number />
+              <SponsorshipOpportunities />
+              <Speakers />
+              <Sponsors sponsors={sponsors} />
             </>
           }/>
 
