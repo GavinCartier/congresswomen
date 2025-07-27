@@ -30,6 +30,7 @@ function App() {
               />
             </>
           }/>
+        <Route path="/globalawards" element={<AwardsPage />} />  
         </Routes>
         <Footer />
       </Router>

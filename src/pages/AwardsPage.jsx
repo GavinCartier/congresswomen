@@ -1,14 +1,9 @@
-function AwardsPage({
-    sponsors
-}) {
+import GlobalAwards from "../components/GlobalAwards/GlobalAwards.jsx"
+
+function AwardsPage() {
     return (
         <div>
-            <SponsorshipOpportunities />
-            <MeetYourGoals />
-            <GetInvolved />
-            <Sponsors sponsors={sponsors}/>
+            <GlobalAwards />
         </div>
-    )
+    );
 }
-
-export default AwardsPage
