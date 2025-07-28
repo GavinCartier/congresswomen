@@ -4,6 +4,11 @@ export const loadImagesFromDir = (folderName) => {
       eager: true,
       import: 'default'
     }),
+
+    speakers: import.meta.glob('../assets/speakers/*.{png,jpg,jpeg,svg,webp}', {
+      eager: true,
+      import: 'default'
+    }),
   }
 
   const files = allImports[folderName];
