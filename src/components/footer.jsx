@@ -8,7 +8,7 @@ function Footer() {
     <footer className={styles.footer}>
   <div className={styles.footerContent}>
     <div className={styles.top}>
-      <Link to="/" className={styles.logo}>EMEA Venture Builder</Link>
+      <Link to="/" className={styles.logo}>Powered by Neema AI</Link>
     </div>
 
     <div className={styles.bottom}>
@@ -21,7 +21,7 @@ function Footer() {
           <FaInstagram className={styles.icon} />
         </a>
       </div>
-      <p className={styles.copyright}>© 2025 EMEA Venture. All rights reserved.</p>
+      <p className={styles.copyright}>© 2025 Neema AI. All rights reserved.</p>
       </div>
       
   </div>

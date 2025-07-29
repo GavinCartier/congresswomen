@@ -30,6 +30,7 @@
 .infoPanelContent button {
     width: 100%;
     text-align: left;
+    color: #0c2a5d;
     background: transparent;
     padding: 1rem;
     border-bottom: 1px solid gray;
@@ -38,6 +39,10 @@
     font-weight: 450;
     justify-content: space-between;
     display: flex;
+}
+
+.infoPanelContent button:hover {
+    background-color: transparent;
 }
 
 .infoPanelCollapsedContent {
@@ -52,4 +57,23 @@
 }
 .chevronOpen {
     transform: rotate(90deg);
+}
+
+@media (max-width: 768px) {
+    .infoPanel {
+        flex-direction: column;
+    }
+
+    .infoPanelContent button {
+        border-bottom: 0px;
+        border-top: 1px solid gray
+    }
+
+    .infoPanelCollapsedText {
+        border-bottom: 0px;
+    }
+
+    .infoPanelContent {
+        border-left: 0px;
+    }
 }

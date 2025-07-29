@@ -27,6 +27,7 @@ onSubmitForm={() => console.log('Form submitted')}
 
 function App() {
   const sponsors = useMemo(() => loadImagesFromDir('sponsors'), []);
+  const speakers = useMemo(() => loadImagesFromDir('speakers'), []);
 
   return (
     <>
@@ -38,7 +39,10 @@ function App() {
               <MainPage />
               <Number />
               <SponsorshipOpportunities />
-              <Speakers />
+              <Speakers speakers={speakers.map((speaker, index) => ({
+                image: speaker.logo,
+                name: `Speaker ${index+1}`
+              }))}/>
               <Sponsors sponsors={sponsors} />
             </>
           }/>

@@ -33,7 +33,7 @@
     margin-top: 1.5rem;
 }
 
-button {
+.sponsorshipOpportunitiesButtons button {
     background-color: #ffffff;
     color: #0c2a5d;
     padding: 0.6rem 1.2rem;
@@ -45,7 +45,7 @@ button {
     text-align: center;
   }
   
-button:hover {
+.sponsorshipOpportunities button:hover {
     background-color: #cce4ff;
     color: #023e8a;
 }
