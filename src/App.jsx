@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from "./components/header.jsx"; 
 import Footer from "./components/footer.jsx"; 
 import SponsorshipPage from "./pages/SponsorshipPage.jsx";
+import SpeakersPage from './pages/SpeakersPage.jsx';
 import AwardsPage from "./pages/AwardsPage.jsx"
 import MainPage from "./components/mainpage.jsx";
 
@@ -42,6 +43,11 @@ function App() {
               />
             </>
           }/>
+        <Route path="/speakers" element={<Speakers speakers={speakers.map((speaker, index) => ({
+                image: speaker.logo,
+                name: `Speaker ${index+1}`
+              }))}/>} />
+        
         <Route path="/globalawards" element={<AwardsPage />} />  
         </Routes>
         <Footer />
