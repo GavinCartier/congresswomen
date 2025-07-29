@@ -13,6 +13,18 @@ import Speakers from "./components/Speakers/Speakers.jsx";
 import Sponsors from "./components/Sponsorship/Sponsors.jsx";
 import { loadImagesFromDir } from "./utils/loadImagesFromDir.js";
 
+import FormfacadeEmbed from "@formfacade/embed-react";
+
+
+
+<FormfacadeEmbed
+
+formFacadeURL="https://formfacade.com/include/105375484473876485167/form/1FAIpQLSfUoGErrb0mzYkx2_MzEsxP7Vf0vKEIOzlpRYHZ6ovW1jChrQ/classic.js/?div=ff-compose"
+
+onSubmitForm={() => console.log('Form submitted')}
+
+/>
+
 function App() {
   const sponsors = useMemo(() => loadImagesFromDir('sponsors'), []);
 
