@@ -6,26 +6,48 @@ import { FaLinkedin, FaInstagram } from 'react-icons/fa';
 function Footer() {
   return (
     <footer className={styles.footer}>
-  <div className={styles.footerContent}>
-    <div className={styles.top}>
-      <Link to="/" className={styles.logo}>Powered by Neema AI</Link>
-    </div>
+      <div className={styles.footerContent}>
 
-    <div className={styles.bottom}>
-      <Link to="/contact" className={styles.contactButton}>Contact Us</Link>
-      <div className={styles.socialIcons}>
-        <a href="https://www.linkedin.com/company/emea-venture/" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin className={styles.icon} />
-        </a>
-        <a href="https://www.instagram.com/speaker_nema/" target="_blank" rel="noopener noreferrer">
-          <FaInstagram className={styles.icon} />
-        </a>
+        {/* Row 1: Powered by + Logo */}
+        <div className={styles.logoRow}>
+          <span className={styles.logoText}>Powered by</span>
+          <Link to="/" aria-label="Neema AI Home">
+            <img
+              src="/neemalogo.png"
+              alt="Neema AI Logo"
+              className={styles.logoImage}
+            />
+          </Link>
+        </div>
+
+        {/* Row 2: Left (address) • Center (icons) • Right (copyright) */}
+        <div className={styles.footerRow}>
+          <p className={styles.rights}>Av. Diagonal 452, Grácia 08006 Barcelona</p>
+
+          <div className={styles.centerSection}>
+            <a
+              href="https://www.linkedin.com/company/emea-venture/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin className={styles.icon} />
+            </a>
+            <a
+              href="https://www.instagram.com/speaker_nema/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <FaInstagram className={styles.icon} />
+            </a>
+          </div>
+
+          <p className={styles.rights}>© 2025 Neema AI. All Rights Reserved.</p>
+        </div>
+
       </div>
-      <p className={styles.copyright}>© 2025 Neema AI. All rights reserved.</p>
-      </div>
-      
-  </div>
-</footer>
+    </footer>
   );
 }
 

@@ -1,107 +1,84 @@
 .footer {
-    background-color: #0c2a5d;
-    color: #fff;
-    padding: 2.5rem 1rem;
-  }
-  
-  .footerContent {
-  max-width: 1200px;
-  padding: 0 1rem;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
+  background-color: #0c2a5d;
+  color: #fff;
+  padding: 2.5rem 1rem;
 }
-  
-  .logo {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 1.3rem;
-  }
-  
-  .top {
-    display: flex;
-    flex-direction: column;
-    align-items:left;
-    gap: 1.5rem;
-    width: 100%
-  }
 
-  .bottom {
+.footerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
   display: flex;
-  flex-direction: row;
-  gap: 0.3rem;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin: 1rem 0; /* Only vertical margin */
+  flex-direction: column; /* two rows: logoRow, footerRow */
+  gap: 1rem;
 }
-  
-  .right {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-  }
-  
-  .socialIcons {
-    display: flex;
-    gap: 1.0rem;
-    margin-left: 6.0rem;
-  }
-  
-  .icon {
-    color: #cbd5e1;
-    font-size: 2.0rem;
-    transition: color 0.3s ease;
-  }
-  
-  .icon:hover {
-    color: #ffffff;
-  }
-  
-  .contactButton {
-    background-color: #ffffff;
-    color: #0c2a5d;
-    padding: 0.5rem 1.2rem;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.3s ease, color 0.3s ease;
+
+/* Row 1: Powered by + logo */
+.logoRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoText {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+.logoImage {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+/* Row 2: Address (left) • Icons (center) • Copyright (right) */
+.footerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* left, center, right */
+  width: 100%;
+  gap: 1rem;
+}
+
+.footerRow p {
+  margin: 0;
+}
+
+.centerSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-width: 120px; /* keeps icons centered when text is long */
+}
+
+.icon {
+  color: #cbd5e1;
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #ffffff;
+}
+
+/* Shared styling for address and copyright */
+.rights {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  line-height: 1.4;
+}
+
+/* Responsive: stack the second row on small screens */
+@media screen and (max-width: 768px) {
+  .footerRow {
+    flex-direction: column;
+    gap: 0.5rem;
     text-align: center;
   }
-  
-  .contactButton:hover {
-    background-color: #cce4ff;
-    color: #023e8a;
-  }
-  
-  .copyright {
-    font-size: 0.85rem;
-    color: #cbd5e1;
-  }
 
-  @media screen and (max-width: 768px) {
-    .bottom {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .contactButton {
-      width: 100%;
-      max-width: 250px;
-      margin-bottom: 1rem;
-    }
-  
-    .copyright {
-      text-align: center;
-      margin-top: 1rem;
-    }
-  
-    .socialIcons {
-      margin-left: 0;
-    }
+  .centerSection {
+    justify-content: center;
   }
-  
+}

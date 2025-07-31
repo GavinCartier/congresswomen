@@ -11,7 +11,6 @@ function SponsorshipPage({
         <div>
             <SponsorshipOpportunities />
             <MeetYourGoals />
-            <InfoPanel />
             <GetInvolved />
             <Sponsors sponsors={sponsors}/>
         </div>

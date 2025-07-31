@@ -7,6 +7,7 @@ import SponsorshipPage from "./pages/SponsorshipPage.jsx";
 import SpeakersPage from './pages/SpeakersPage.jsx';
 import AwardsPage from "./pages/AwardsPage.jsx"
 import MainPage from "./components/mainpage.jsx";
+import InfoPanel from "./components/InfoPanel/InfoPanel";
 
 import Number from "./components/number.jsx"
 import SponsorshipOpportunities from "./components/SponsorshipOpportunities/SponsorshipOpportunities.jsx";
@@ -29,6 +30,7 @@ function App() {
               <MainPage />
               <Number />
               <SponsorshipOpportunities />
+              <InfoPanel />
               <Speakers speakers={speakers.map((speaker, index) => ({
                 image: speaker.logo,
                 name: `Speaker ${index+1}`
